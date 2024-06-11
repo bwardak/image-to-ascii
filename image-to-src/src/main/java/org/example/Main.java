@@ -13,7 +13,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         FileWriter writer = new FileWriter("C:\\Users\\bahee\\Documents\\Coding\\image-to-ascii\\src\\main\\ascii.txt");
 
-        File image = new File("C:\\Users\\bahee\\Documents\\jaegerrr.jpg");
+        File image = new File("C:\\Users\\bahee\\Documents\\Coding\\image-to-ascii\\src\\main\\jett.png");
+
 
         BufferedImage img = ImageIO.read(image);
 
@@ -28,8 +29,6 @@ public class Main {
                 int green = color.getGreen();
 
                 double brightness = 0.2126 * red + 0.7152 * green + 0.0722 * blue;
-
-                System.out.println(brightness);
 
                 if (brightness <= 28) {
                     writer.append("#");
@@ -52,11 +51,6 @@ public class Main {
                 } else {
                     writer.append(" ");
                 }
-
-
-
-
-                //# X % & * + / ( ' " "
             }
             writer.append("\n");
             writer.flush();
