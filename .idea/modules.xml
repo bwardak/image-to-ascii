@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/image-to-ascii.iml" filepath="$PROJECT_DIR$/.idea/image-to-ascii.iml" />
-      <module fileurl="file://$PROJECT_DIR$/image-to-src.iml" filepath="$PROJECT_DIR$/image-to-src.iml" />
     </modules>
   </component>
 </project>

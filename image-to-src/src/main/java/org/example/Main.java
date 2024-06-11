@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         FileWriter writer = new FileWriter("C:\\Users\\bahee\\Documents\\Coding\\image-to-ascii\\src\\main\\ascii.txt");
 
-        File image = new File("C:\\Users\\bahee\\Documents\\daki.jpg");
+        File image = new File("C:\\Users\\bahee\\Documents\\jaegerrr.jpg");
 
         BufferedImage img = ImageIO.read(image);
 
@@ -26,6 +26,10 @@ public class Main {
                 int red = color.getRed();
                 int blue = color.getBlue();
                 int green = color.getGreen();
+
+                double brightness = 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+
+                System.out.println(brightness);
             }
         }
     }
