@@ -30,7 +30,37 @@ public class Main {
                 double brightness = 0.2126 * red + 0.7152 * green + 0.0722 * blue;
 
                 System.out.println(brightness);
+
+                if (brightness <= 28) {
+                    writer.append("#");
+                } else if (brightness <= 56) {
+                    writer.append("X");
+                } else if (brightness <= 84) {
+                    writer.append("%");
+                } else if (brightness <= 112) {
+                    writer.append("&");
+                } else if (brightness <= 140) {
+                    writer.append("*");
+                } else if (brightness <= 168) {
+                    writer.append("+");
+                } else if (brightness <= 196) {
+                    writer.append("/");
+                } else if (brightness <= 224) {
+                    writer.append("(");
+                } else if (brightness <= 252) {
+                    writer.append("'");
+                } else {
+                    writer.append(" ");
+                }
+
+
+
+
+                //# X % & * + / ( ' " "
             }
+            writer.append("\n");
+            writer.flush();
         }
+        writer.close();
     }
 }
